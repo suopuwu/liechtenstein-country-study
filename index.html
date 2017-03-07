@@ -25,6 +25,9 @@
         #testButtonBg {
             background-image: url("images/placeholder.png");
         }
+        #splash {
+            transition: all 0.5s;
+        }
     </style>
 </head>
 <!--
@@ -37,6 +40,11 @@
         for content.
     -->
 <body>
+    <div id="splash" style="z-index: 20; width: 100%; height: 100%; position: absolute; background-color: #000a14;">
+        <canvas id="space"></canvas>
+        <a style="display:none;" href="#" id="warp">WARP SPEED</a>
+        <h1 id="loadHeader" style="position:absolute;z-index:9;bottom:0;left:0;right:0;margin:20px auto;color:rgba(209, 255, 255,1);padding:1em;width:10em;text-align:center;font-weight:700;font-size:1.2em;display:inline-block;text-decoration:none;background:rgba(0,0,0,0.8)">Loading</h1>
+    </div>
     <div id="main" class="container">
         <div class="main-box">
             <div id="introButtonBg" class="card hidden">
