@@ -139,13 +139,15 @@ executeFrame();
             setTimeout(nopeFalse, 550);
         });
     });
-    setTimeout(splashGone, 3000);
-    function splashGone () {
-        $('#splash').css('opacity', 0);
-        setTimeout(splashDisplayNone, 500);
-    }
-    function splashDisplayNone () {
-        $('#splash').addClass('hidden');
-        console.log('yep');
-    }
+    $(window).on("load", function() {
+        setTimeout(splashGone, 500);
+        function splashGone () {
+            $('#splash').css('opacity', 0);
+            setTimeout(splashDisplayNone, 500);
+        }
+        function splashDisplayNone () {
+            $('#splash').addClass('hidden');
+            console.log('yep');
+        }
+        });
 });
