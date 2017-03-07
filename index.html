@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;">
+<head>
+    <title id="title">Liechtenstein</title>
+    <!--external bits-->
+    <link rel="stylesheet" href="/lib/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="lib/prefixfree.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    <!--  <script src="lib/two.js"></script>-->
+    <style>
+        #introPage {
+            display: flex;
+            flex-flow: column;
+            opacity: 1;
+            background-image: url("../images/liechtensteinSplash.jpg");
+            background-position: center;
+            background-size: cover;
+            background-color: #263238;
+        }
+        #testButtonBg {
+            background-image: url("../images/placeholder.png");
+        }
+    </style>
+</head>
+<!--
+    syntax is as follows:
+    make a new page by putting a div in main-box and label it <name>ButtonBg
+        then make an inner div named <name>Button and put a description in it.
+        style the buttonbg element for a background
+        then make a div child to body and name it <name>Page with the class
+        page-content. once you have done this you can just add stuff to it
+        for content.
+    -->
+<body>
+    <div id="main" class="container">
+        <div class="main-box">
+            <div id="introButtonBg" class="card hidden">
+                <div id="introButton">intro</div>
+            </div>
+            <div id="testButtonBg" class="card">
+                <div id="testButton">test</div>
+            </div>
+            <div id="test2ButtonBg" class="card">
+                <div id="test2Button">test</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="introPage" class="page-content">
+        <h1 class="whitebg">Liechtenstein Country Study</h1>
+        <p class="whitebg">Welcome to my humble country study on Liechtenstein.</p>
+        <div style="flex-grow: 1;"></div>
+        <p class="whitebg" style="align-self: flex-end;">Click outside this dialog to exit.</p>
+    </div>
+    <div id="testPage" class="page-content">
+        <p>testbr <br>sdf</p>
+    </div>
+    <div id="test2Page" class="page-content">
+        <p>test2 <br>sdf</p>
+    </div>
+</body>
+
+</html>
