@@ -92,8 +92,8 @@ executeFrame();
     var nope = false;
     //resizes the cards proportionally
     function resizeCards() {
-        $('.card').css('width', window.innerHeight * 0.25);
-        $('.card').css('height', window.innerHeight * 0.25);
+        $('.card').css('width', window.innerHeight * 0.8 / 3.1);
+        $('.card').css('height', window.innerHeight * 0.8 / 3.1);
     }
     resizeCards();
     window.addEventListener('resize', resizeCards);

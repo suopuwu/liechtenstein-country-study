@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html style="overflow: hidden;">
+
 <head>
     <title id="title">Liechtenstein</title>
     <!--external bits-->
@@ -21,13 +22,63 @@
             background-position: center;
             background-size: cover;
             background-color: #263238;
+            overflow: hidden;
         }
-        #testButtonBg {
-            background-image: url("images/placeholder.png");
+        
+        #overviewButtonBg {
+            background-image: url("images/icons/overview.png");
         }
+        
+        #geographyButtonBg {
+            background-color: #263238;
+            background-image: url("images/icons/geoGlobe.png");
+        }
+        
+        #economyButtonBg {
+            background-color: #6a9b47;
+            background-image: url("images/icons/economy.png");
+        }
+        
+        #educationButtonBg {
+            background-image: url("images/icons/education.png");
+        }
+        
+        #militaryButtonBg {
+            background-image: url("images/icons/military.png");
+        }
+        
+        #governmentButtonBg {
+            background-color: #4cc5ad;
+            background-image: url("images/icons/government.png");
+        }
+        
+        #relationsButtonBg {
+            background-image: url("images/icons/historicalRelations.png");
+        }
+        
+        #twoArticlesButtonBg {
+            background-color: #19b5bb;
+            background-image: url("images/icons/twoArticles.png");
+        }
+        
+        #foodButtonBg {
+            background-color: #59b8dd;
+            background-image: url("images/icons/eatingPractices.png");
+        }
+        
+        #outlookButtonBg {
+            background-color: #76c2af;
+            background-image: url("images/icons/outlook.png");
+        }
+        
+        #emailButtonBg {
+            background-image: url("images/icons/embassyLetter.png");
+        }
+        
         #splash {
             transition: all 0.5s;
         }
+
     </style>
 </head>
 <!--
@@ -39,6 +90,7 @@
         page-content. once you have done this you can just add stuff to it
         for content.
     -->
+
 <body>
     <div id="splash" style="z-index: 20; width: 100%; height: 100%; position: absolute; background-color: #000a14;">
         <canvas id="space"></canvas>
@@ -47,14 +99,41 @@
     </div>
     <div id="main" class="container">
         <div class="main-box">
-            <div id="introButtonBg" class="card hidden">
+            <div class="card hidden" id="introButtonBg">
                 <div id="introButton">intro</div>
             </div>
-            <div id="testButtonBg" class="card">
-                <div id="testButton">test</div>
+            <div class="card" id="overviewButtonBg">
+                <div id="overviewButton">Overview / Brief History</div>
             </div>
-            <div id="test2ButtonBg" class="card">
-                <div id="test2Button">test</div>
+            <div class="card" id="geographyButtonBg">
+                <div id="geographyButton">Five Themes of Geography</div>
+            </div>
+            <div class="card" id="economyButtonBg">
+                <div id="economybutton">Economy</div>
+            </div>
+            <div class="card" id="educationButtonBg">
+                <div id="educationbutton">Education</div>
+            </div>
+            <div class="card" id="militaryButtonBg">
+                <div id="militarybutton">Military</div>
+            </div>
+            <div class="card" id="governmentButtonBg">
+                <div id="governmentbutton">Government</div>
+            </div>
+            <div class="card" id="relationsButtonBg">
+                <div id="relationsbutton">USA / Liechtenstein Relations</div>
+            </div>
+            <div class="card" id="twoArticlesButtonBg">
+                <div id="twoArticlesbutton">Two Articles On Liechtenstein</div>
+            </div>
+            <div class="card" id="foodButtonBg">
+                <div id="foodbutton">Eating Practices</div>
+            </div>
+            <div class="card" id="outlookButtonBg">
+                <div id="outlookbutton">Liechtenstein Outlook</div>
+            </div>
+            <div class="card" id="emailButtonBg">
+                <div id="emailbutton">Email To Embassy</div>
             </div>
         </div>
 
@@ -62,15 +141,221 @@
 
     <div id="introPage" class="page-content">
         <h1 class="whitebg">Liechtenstein Country Study</h1>
-        <p class="whitebg">Welcome to my humble country study on Liechtenstein.</p>
+        <p class="whitebg">Welcome to my humble country study on Liechtenstein. <br> You can hover over an icon to see the label.</p>
         <div style="flex-grow: 1;"></div>
         <p class="whitebg" style="align-self: flex-end;">Click outside this dialog to exit.</p>
     </div>
-    <div id="testPage" class="page-content">
-        <p>testbr <br>sdf</p>
+    <div id="overviewPage" class="page-content">
+        <h1>Liechtenstein Overview</h1>
+        <p>Liechtenstein is a doubly landlocked, German-speaking constitutional monarchy in Central Europe, located between Switzerland and Austria.
+            <br>It is known for being the 6th smallest country in the world.
+            <img src="images/map.png" alt="Map Image" width="678" height="501" align="right"> <strong>History:</strong> <br>Before Liechtenstein existed, there were two separate territories named Vaduz and Schellenberg which took up the same space as modern Liechtenstein. Liechtenstein was formed on 23 January 1718 by the Holy Roman Emperor, Charles VI Liechtenstein was allied with Austria-Hungary during world war I Possibly because of the losing alliance in the previous war, they chose to pull a switzerland in world war II and remained neutral. Because of this, people imported their treasures to Liechtenstein for safekeeping. Liechtenstein was quite poor for some time after this, resorting to selling national treasures like "Ginevra de' Benci" by Leonardo da Vinci. However, by the late 1870s they became one of the most wealthy countries in the world due to low taxes drawing companies in.
+
+        </p>
+        <iframe width="560" height="315" align="right" src="https://www.youtube.com/embed/WWmDbMbDZKk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
     </div>
-    <div id="test2Page" class="page-content">
-        <p>test2 <br>sdf</p>
+    <div id="geographyPage" class="page-content">
+        <h1>The Five Themes</h1>
+        <h2>Location</h2>
+        <p>Liechtenstein is located at 47.166890, 9.514684 between Austria and Switzerland.</p>
+        <h2>Place / Region</h2>
+        <p>
+            <img src="images/rhineValley.jpg" alt="the rhine valley" align="right"> Liechtenstein is composed of mostly mountainous terrain except the Rhine valley. There are no bodies of water in Liechtenstein except the Gampriner Seele. It is continental, having cold, cloudy winters with frequent snow or rain and cool to moderately warm temperatures There are not really any distinct regions in Liechtenstein because of how tiny it is
+        </p>
+        <p>
+            For other human and physical characteristics, take a look at this table.
+        </p>
+        <table>
+            <tr>
+                <td></td>
+                <td>Liechtenstein</td>
+                <td>USA</td>
+                <td>Nicaragua</td>
+            </tr>
+            <tr>
+                <td>Land Area (km2)</td>
+                <td>160</td>
+                <td>3,797,000</td>
+                <td>130,370</td>
+            </tr>
+            <tr>
+                <td> Primary religion </td>
+                <td> Roman Catholic </td>
+                <td> Christian </td>
+                <td> Roman Catholic </td>
+            </tr>
+            <tr>
+                <td> Pop density (ppl/km2) </td>
+                <td> 229 </td>
+                <td> 52 </td>
+                <td> 32 </td>
+            </tr>
+            <tr>
+                <td> Annual rainfall (mm) </td>
+                <td> 1000 </td>
+                <td> 300 (Idaho) </td>
+                <td> 4500 </td>
+            </tr>
+            <tr>
+                <td> Language </td>
+                <td> German </td>
+                <td> English </td>
+                <td> Spanish </td>
+            </tr>
+        </table>
+        <p>
+            It is quite easy to see how Liechtenstein's population pales in comparison to the others, but it has a much higher population density. There are not really many similarities between these three countries in terms of physical and human characteristics.
+        </p>
+        <h2>Human Environmental Interaction</h2>
+        <p>
+            Minimal farming goes on in Liechtenstein because of the insignificant amount of land and the need to preserve forests to prevent erosion. People can’t really fish in a double land locked country either, except the only lake and some rivers. Other than simply living on top of the land, Liechtenstein does not interact much because most of it's suplies come from imports.
+        </p>
+        <h2>Movement</h2>
+        <p>Exports are fairly limited due to Liechtenstein being so small and having virtually no natural resources, so primary exports are manufactured, not raw resources. Cables and small machinery are some primary exports. Imports are mainly foodstuffs and raw resources. Liechtenstein imports around 85% of its electricity from switzerland. There are also fairly lax migration policies between switzerland and Liechtenstein.
+        </p>
+        <table>
+            <tr>
+                <td></td>
+                <td>Liechtenstein</td>
+                <td>USA</td>
+                <td>Nicaragua</td>
+            </tr>
+            <tr>
+                <td> Net migration (/1000) </td>
+                <td> 5 </td>
+                <td> 3.9 </td>
+                <td> -2.9 </td>
+            </tr>
+        </table>
+    </div>
+    <div id="economyPage" class="page-content">
+        <h1>Economy</h1>
+        <table>
+            <tr>
+                <td> </td>
+                <td> Liechtenstein </td>
+                <td> USA </td>
+                <td> Nicaragua </td>
+            </tr>
+            <tr>
+                <td> GDP per capita </td>
+                <td> $134,617.38 </td>
+                <td> $53,041.98 </td>
+                <td> $1,851.11 </td>
+            </tr>
+            <tr>
+                <td> Unemployment (%) </td>
+                <td> 2.4 </td>
+                <td> 4.8 </td>
+                <td> 6.1 </td>
+            </tr>
+            <tr>
+                <td> Currency </td>
+                <td> Swiss franc </td>
+                <td> USD </td>
+                <td> Nicaraguan córdoba </td>
+            </tr>
+        </table>
+        <p><img src="images/economyGraph.png" alt="Graph please" align="right">For centuries, Liechtenstein was almost entirely agriculture based. After world war II however, they evolved into a highly modernized, export-oriented industrial society with manufacturing as its leading sector. Liechtenstein is now one of the most wealthy countries in the world, as you can see by the GDP per capita that is almost three times as much as the USA’s. It is often viewed as a center of business. There are more non-resident business entities than there are people in Liechtenstein. General services means tourism, real estate, information technology, cleaning and repair services, and retail to name just a few. Once the fact that general services accounts for so many different things, goods production and financial services are the top industries. If you lived in Liechtenstein, the most likely sector you would be employed in is general services (51%).</p>
+    </div>
+    <div id="educationPage" class="page-content">
+        <h1>Education</h1>
+        <p>Liechtenstein has an amazing education system which is probably due in part to the fact that high school teachers get paid a starting salary of $82,389, compared to the average high school teacher’s salary in the USA of $57,200. On top of this, the tiny population in Liechtenstein makes each class have only twelve students on average.
+            <h2>Average Education Path</h2>
+            <p>
+                Children begin school at the age of six and continue in primary school for six years. <br> Depending on their proficiency in primary school they then get sent to either Oberschule or Gymnasium for four years. <br> Secondary school comes after this and it takes four years to complete. <br> Upon completion of secondary school, the student is awarded a Maturazeugnis, the equivalent of a high school diploma. <br> After this, it is vocational school and college in other countries since there are no universities in Liechtenstein. <br>
+            </p>
+            <h2>Some Facts</h2>
+            <p>
+                School is compulsory until age 15. <br> There are equal opportunities for each gender in education.</p>
+        </p>
+    </div>
+    <div id="militaryPage" class="page-content">
+        <h1>Military</h1>
+        <p>
+            Possibly due to being neutral or a small population size, Liechtenstein is one of 16 countries that has absolutely no military forces. Before the Austro-Prussian War of 1866, they did have an army of eighty men. This was disbanded because it was deemed too expensive. Either way, the population would be too small to provide an army of any significant force.
+        </p>
+    </div>
+    <div id="governmentPage" class="page-content">
+        <h1>Government</h1>
+        <p>Liechtenstein is a constitutional monarchy of sorts because it has a monarch. The monarch is hereditarily chosen. There is also a democratically elected parliament. It is also a direct democracy because voters can propose and enact constitutional amendments and legislation independent of the legislature. Liechtenstein also seems to be very politically stable. This is possibly due to the fact that
+            <ul>
+                <li>There are no polarizing figures like Trump in Liechtenstein</li>
+                <li>Some of the highest GDP per capita & lowest unemployment rate</li>
+                <li>Less violence, see murder rate below</li>
+            </ul>
+        </p>
+        <table>
+            <tr>
+                <td></td>
+                <td>Liechtenstein</td>
+                <td>USA</td>
+                <td>Nicaragua</td>
+            </tr>
+            <tr>
+                <td> Murder rate (/100,000) </td>
+                <td> 2.8 </td>
+                <td> 5 </td>
+                <td> 13 </td>
+            </tr>
+        </table>
+    </div>
+    <div id="relationsPage" class="page-content">
+        <h1>USA - Liechtenstein Relations</h1>
+        <p>
+            Historical interaction between the two have been very limited. Neither country has really interacted with each other except for in 2002 when they signed a mutual anti tax evasion treaty. The USA does not even have an embassy in Liechtenstein. Judging from the inadequate sample of one example, their relationship seems to be positive. Currently the USA is one of Liechtenstein’s trade partners.
+        </p>
+    </div>
+    <div id="twoArticlesPage" class="page-content">
+        <h1>Two Articles</h1>
+        <p><img src="images/cow.jpg" alt="cow" align="right">(There were like 3 articles that were in English.) The first article I read, by The Cattle Site, was about how there was a Paratuberculosis Outbreak in cows. There have not been extreme measures taken to ensure the containment of the disease. Looking at this article, there is not a lot of insight I can provide as I am not a cattle farmer. It doesn’t seem like a big deal as long as it is contained. </p>
+        <p><img src="images/superCar.jpg" alt="car" align="right">The second article I read was on how they made a “super electric car”. This super electric car has four wheel drive and a cruising range of 1000 km. This is all possible due to the new flow batteries. I approve of this choice because it is more environmentally friendly. Liechtenstein could be a good place to start mass producing electric cars since it would be more realistic to provide charging stations there.
+        </p>
+    </div>
+    <div id="foodPage" class="page-content">
+        <h1>Eating Practices</h1>
+        <p>
+            Liechtenstein cuisine has been influenced by Austria and Switzerland because it is sandwiched in between them. Like in many other European countries, cheeses and soups are central parts of their diet. Common dishes in liechtenstein are Käsknöpfle mit Apfelmus (a doughy pasta-style cheese dish served with applesauce), variations of Ribel (sort of like boiled cornmeal) and Schwartenmagen (pickled meat in jelly). The recipe I will be making is ribel. Ribel in the past was an absolute staple for the poor class in liechtenstein. Now it is enjoyed as one of the most traditional meals in Liechtenstein. <br>
+            <strong>Ingredients</strong>
+        </p>
+        <ul>
+            <li>
+                Approximately 600g cornmeal </li>
+            <li>
+                1l milk</li>
+            <li>
+                1 tablespoon salt</li>
+            <li>
+                1-2 spoons of butter and vegetable fat</li>
+        </ul>
+        <div class="flex" id="foodPics">
+            <div style="background-image: url('../images/foodOne.jpg');"></div>
+            <div style="background-image: url('../images/foodTwo.jpg');"></div>
+            <div style="background-image: url('../images/foodThree.jpeg');"></div>
+        </div>
+    </div>
+    <div id="outlookPage" class="page-content">
+        <h1>Outlook</h1>
+        <p>Liechtenstein’s future looks bright. 
+It’s GDP per capita is on an upwards incline and as a business center with a stable government, I don’t see this changing anytime soon.</p>
+   <div style="background-image: url('../images/gdpGraph.png'); flex-grow: 1; background-size: cover; width: 639px; height: 342px; align-self: center;"></div>
+    </div>
+    <div id="emailPage" class="page-content">
+        <h1>Email To Embassy</h1>
+        <p>Dear Sir/Madam, <br>
+I am Joseph Lu, a student doing a study on Liechtenstein. As of yet, resources for this study have been obtained online. Because these sources may misrepresent Liechtenstein, I hope to obtain more accurate information from someone knowledgeable and authoritative on the subject. <br>
+If you have the time, please provide the following information. <br>
+Is Liechtenstein politically stable? <br>
+What is the outlook on Liechtenstein’s economy? <br>
+How are Liechtenstein relations with the US? <br>
+Is education equal for each gender? <br>
+Thank you for taking the time to read this letter. <br>
+Respectfully, <br>
+Joseph Lu
+</p>
+   <h2>Response:</h2>
+   <p><img src="images/error.png" alt="error">Your message couldn't be delivered to Bettina.Marxer@was.rep.llv.li because the remote server is misconfigured. See technical details below for more information.</p>
     </div>
 </body>
 

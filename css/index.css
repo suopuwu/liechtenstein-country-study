@@ -2,6 +2,22 @@ body {
     display: flex;
     justify-content: center;
 }
+
+p {
+    line-height: 1.7em;
+    font-family: "arial";
+    color: rgba(0, 0, 0, 0.8)
+}
+
+strong {
+    text-decoration: underline;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 .container {
     background-image: url("../images/cityBg.jpg");
     background-position: center;
@@ -21,7 +37,8 @@ body {
     flex-grow: 1;
     align-items: flex-start;
     justify-content: space-between;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     box-shadow: inset 0 0 10px #000000;
     background-color: #ECEFF1;
 }
@@ -38,7 +55,8 @@ body {
     background-size: cover;
     background-color: #263238;
 }
-.card > div {
+
+.card>div {
     font-family: 'inconsolata';
     display: flex;
     cursor: pointer;
@@ -52,11 +70,18 @@ body {
     height: 100%;
     transition: all, 0.5s;
 }
-.card:hover > div {
+
+.card:hover>div {
     opacity: 1;
 }
 
+.card>div {
+    text-align: center;
+}
+
 .page-content {
+    display: flex;
+    flex-flow: column nowrap;
     opacity: 0;
     display: none;
     margin-top: 7.5%;
@@ -69,10 +94,54 @@ body {
     border-radius: 25px;
     box-shadow: 0 0 0 999px rgba(0, 0, 0, 0.5);
     transition: opacity 0.5s;
-    min-height: 70%;
+    height: 70%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+#foodPics {
+    flex-flow: row;
+    flex-grow: 1;
+    min-height: 400px;
+}
+
+#foodPics>div {
+    flex-grow: 1;
+    background-position: center;
+    background-size: cover;
+    background-color: #263238;
+}
+
+p>img {
+    flex-shrink: 0;
+    align-self: flex-end;
 }
 
 h1 {
     padding-bottom: 20px;
     font-size: 2em;
+}
+
+h2 {
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+
+li {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "arial";
+}
+
+li::before {
+    content: "    • ";
+}
+
+table,
+td {
+    align-self: center;
+    border: 1px solid black;
 }
